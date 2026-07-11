@@ -1,9 +1,9 @@
 vertebrates = {
-  :mammals => ["homosapiens", "bears", "elephants", "monkeys"],
-  :birds => ["finches", "ostriches", "eagles", "ravens"],
-  :reptiles => ["snakes", "turtle", "tortoise", "crocodiles"],
-  :amphibians => ["frogs", "toads", "salamanders", "axolotl"],
-  :fishes => ["salmon", "sharks", "pufferfish", "seahorse"]
+  :mammal => ["homosapiens", "bears", "elephants", "monkeys"],
+  :bird => ["finches", "ostriches", "eagles", "ravens"],
+  :reptile => ["snakes", "turtle", "tortoise", "crocodiles"],
+  :amphibian => ["frogs", "toads", "salamanders", "axolotl"],
+  :fish => ["salmon", "sharks", "pufferfish", "seahorse"]
 }
 
 print "Please enter a vertebrate class: "
@@ -13,25 +13,25 @@ begin
   case choice
   
   when "mammal"
-    output = vertebrates[:mammals].join(", ")
+    output = vertebrates[:mammal].join(", ")
     
   when "bird"
-    output = vertebrates[:birds].join(", ")
+    output = vertebrates[:bird].join(", ")
     
   when "reptile"
-    output = vertebrates[:reptiles].join(", ")
+    output = vertebrates[:reptile].join(", ")
     
   when "amphibian"
-    output = vertebrates[:amphibians].join(", ")
+    output = vertebrates[:amphibian].join(", ")
     
   when "fish"
-    output = vertebrates[:fishes].join(", ")
+    output = vertebrates[:fish].join(", ")
     
   else
     puts "Your choice is not valid!"
     
   end
 ensure
-  puts "Here is our list of fishes: #{output}"
+  puts "Here is our list of type #{choice}: #{output}"
 
 end
