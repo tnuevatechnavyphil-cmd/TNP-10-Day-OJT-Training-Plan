@@ -17,7 +17,7 @@ Deliverables:
 
 ---
 
-### Day 2: Ruby Basics
+### Day 3: Enumerable & Debugging
 Deliverables:
 1. 
 2. 
